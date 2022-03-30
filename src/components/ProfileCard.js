@@ -1,5 +1,10 @@
 import React from "react"
 import image from "../images/1.png"
+// import Card from 'react-bootstrap/Card'
+import {  Card, Avatar  } from "antd";
+import {  EditOutlined, EllipsisOutlined, SettingOutlined  } from "@ant-design/icons";
+
+const { Meta } = Card;
 
 export default class ProfileCard extends React.Component {
 
@@ -22,19 +27,23 @@ export default class ProfileCard extends React.Component {
     showForm = () => {
         return (
             <div>
-                <form id="edit-profile">
+                {/* <form id="edit-profile">
 
-                </form>
+                </form> */}
             </div>
         )
     }
 
+    
+
     render(){
 
         return (
-            <div className="profileCard">
+            <div className="">
 
-                <div className="profileImage">
+
+
+                {/* <div className="profileImage">
                     <img src={image}/>
                 </div>
 
@@ -57,8 +66,8 @@ export default class ProfileCard extends React.Component {
                 {this.state.isLiked?<p>Liked</p>: <p>Not liked</p>}
                 <button onClick={()=>this.setState({isLiked: !this.state.isLiked})}>Like</button>
                 <button onClick={()=>this.editProfile()}>Edit</button>
-                <button>Delete</button>
-                </div>
+                <button>Delete</button> */}
+                {/* </div> */}
 
             </div>
         )
